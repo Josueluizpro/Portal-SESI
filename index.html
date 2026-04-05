@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Robótica Educacional - SESI 397</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+/* MENU */
+nav {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 2px solid #FFD700;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(90deg, black, #1a1a1a);
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #FFD700;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('') no-repeat center;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #FFD700;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* SEÇÕES */
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img, .card video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card p {
+    text-align: center;
+}
+
+/* PROFESSORES */
+.prof {
+    text-align: center;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.prof img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* RODAPÉ */
+footer {
+    background: black;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #FFD700;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#competicao">Competição</a>
+    <a href="#galeria">Projetos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#professores">Professores</a>
+</nav>
+
+<!-- CABEÇALHO -->
+<header>
+    <h1>Portal Robótica Educacional</h1>
+    <img src="img/foto2.png">
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Programação em Blocos e Robótica Educacional</h2>
+    <p>
+        Desenvolvendo o pensamento computacional, criatividade e inovação através da robótica com LEGO SPIKE e desafios reais de competição.
+    </p>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <h2>Sobre a Programação em Blocos</h2>
+    <p>
+        A programação em blocos permite que alunos aprendam lógica de forma visual e intuitiva. 
+        Utilizando plataformas como SPIKE, é possível controlar sensores, motores e criar robôs inteligentes.
+    </p>
+</section>
+
+<!-- COMPETIÇÃO -->
+<section id="competicao">
+    <h2>Robótica no SESI</h2>
+    <p>
+        No SESI, a robótica vai além da teoria. Os alunos participam de desafios como robô sumô,
+        automação e projetos inovadores, desenvolvendo habilidades para o futuro.
+    </p>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+    <h2>Projetos e Evidências</h2>
+    <div class="grid">
+        <div class="card"><img src="foto1.jpg"><p>Montagem</p></div>
+        <div class="card"><img src="foto2.jpg"><p>Programação</p></div>
+        <div class="card"><img src="foto3.jpg"><p>Testes</p></div>
+        <div class="card"><img src="foto4.jpg"><p>Competição</p></div>
+    </div>
+</section>
+
+<!-- VÍDEOS -->
+<section id="videos">
+    <h2>Vídeos</h2>
+    <div class="grid">
+        <div class="card"><video controls src="video1.mp4"></video></div>
+        <div class="card"><video controls src="video2.mp4"></video></div>
+        <div class="card"><video controls src="video3.mp4"></video></div>
+        <div class="card"><video controls src="video4.mp4"></video></div>
+    </div>
+</section>
+
+<!-- PROFESSORES -->
+<section id="professores">
+    <h2>Professores Colaboradores</h2>
+    <div class="grid">
+        <div class="prof">
+            <img src="prof1.jpg">
+            <h3>Professor 1</h3>
+            <a href="#" class="botao">Acessar</a>
+        </div>
+        <div class="prof">
+            <img src="prof2.jpg">
+            <h3>Professor 2</h3>
+            <a href="#" class="botao">Acessar</a>
+        </div>
+        <div class="prof">
+            <img src="prof3.jpg">
+            <h3>Professor 3</h3>
+            <a href="#" class="botao">Acessar</a>
+        </div>
+        <div class="prof">
+            <img src="prof4.jpg">
+            <h3>Professor 4</h3>
+            <a href="#" class="botao">Acessar</a>
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <p>SESI - Unidade 397</p>
+    <p>Orientador Digital: Josué Luiz do Carmo</p>
+    <img src="img/foto2.png" width="60">
+</footer>
+
+</body>
+</html>
